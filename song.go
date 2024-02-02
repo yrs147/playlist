@@ -17,7 +17,7 @@ type Song struct{
 }
 
 func (s *Song) print(){
-	msg := fmt.Sprintf("%s (%s), likes: %d", s.title, s.category.toString(), s.likes)
+	msg := fmt.Sprintf("%s (%s), likes: %d", s.title, s.category.string(), s.likes)
 	fmt.Println(msg)
 }
 
@@ -31,7 +31,7 @@ func (s *Song) setLiked(liked bool){
 	}
 }
 
-func (c Category) toString() string{
+func (c Category) string() string{
 
 	switch c{
 	case jazz:

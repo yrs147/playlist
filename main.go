@@ -64,5 +64,6 @@ func main(){
 			next.setLiked(choice==1)
 			break
 		}
+		p.print()
 	}
 }

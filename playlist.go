@@ -57,7 +57,7 @@ func (p *Playlist) resetLikes(){
 
 func (p *Playlist) play(s *Song){
 	p.nowPlaying = s
-	fmt.Println(fmt.Sprintf("\nNow playing: %s (%s)\npress 1 / 0 to like / dislike", s.title, s.category.toString()()))
+	fmt.Println(fmt.Sprintf("\nNow playing: %s (%s)\npress 1 / 0 to like / dislike", s.title, s.category.string()))
 }
 
 func (p *Playlist) getNextToPlay() *Song{
