@@ -11,35 +11,36 @@ import (
 func main(){
 	selection := []Song{
 		{
-			title:		"Mettalica - One",
-			likes:		0,
-			category:	rock,
+			title:     "Metallica - Enter Sandman",
+			likes:     0,
+			category:  rock,
 		},
 		{
-			title:		"Lenny Kravitz - Fly Away",
-			likes:		0,
-			category:	rock,
+			title:     "Led Zeppelin - Stairway to Heaven",
+			likes:     0,
+			category:  rock,
 		},
 		{
-			title:		"Artic Monkeys - R U Mine",
-			likes:		0,
-			category:	jazz,
+			title:     "Miles Davis - So What",
+			likes:     0,
+			category:  jazz,
 		},
 		{
-			title:		"TOTO - Rosanna",
-			likes:		0,
-			category:	jazz,
+			title:     "John Coltrane - Giant Steps",
+			likes:     0,
+			category:  jazz,
 		},
 		{
-			title:		"Roddy Rich - Box",
-			likes:		0,
-			category:	pop,
+			title:     "Michael Jackson - Billie Jean",
+			likes:     0,
+			category:  pop,
 		},
 		{
-			title:		"R.E.M - Find the River",
-			likes:		0,
-			category:	pop,
+			title:     "Bruno Mars - Uptown Funk",
+			likes:     0,
+			category:  pop,
 		},
+		
 	}
 
 	p := NewPlaylist(selection)
