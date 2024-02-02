@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"sort"
 	"time"
 )
 
@@ -82,4 +83,8 @@ func (p *Playlist) getNextToPlay() *Song{
 	p.resetLikes()
 
 	return p.songs.random()
+}
+
+func (p *Playlist) sort(){
+	sort.Sort(ByLikes(*p))
 }
